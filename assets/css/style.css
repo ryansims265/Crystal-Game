@@ -1,0 +1,10 @@
+#title {
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    color: orange;
+    text-align: center;
+}
