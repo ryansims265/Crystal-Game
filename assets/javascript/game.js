@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 //Define intial variables 
 var userscoreintial = 0;
 var winsintial = 0;
@@ -6,18 +8,30 @@ var lossesintial = 0;
 //Computer chooses a random number 
 var min = 1;
 var max = 99; 
-var randomnum = Math.floor(Math.random() * (+max - +min)) + +min;
+var randomnum = Math.floor(Math.random() * 120 + 19);
 console.log(randomnum);
 
+//Set up each jewel variables 
+var j1 = Math.floor(Math.random() * 11);
+var j2 = Math.floor(Math.random() * 11);
+var j3 = Math.floor(Math.random() * 11);
+var j4 = Math.floor(Math.random() * 11);
+
 //Random values are assigned to each of the gem gifs and listen for the on-click event 
+function reset() {
+    randomnum = [Math.floor(Math.random() * 120) + 19];
+    j1 = Math.floor(Math.random() * 11);
+    j2 = Math.floor(Math.random() * 11);
+    j3 = Math.floor(Math.random() * 11);
+    j4 = Math.floor(Math.random() * 11);
+}
+
 document.getElementById("gif1").onclick=function (){
     console.log("Gif 1 on-click works");
 }
 
 document.getElementById("gif2").onclick=function (){
     console.log("Gif 2 on-click works");
-    userscoreintial + 10;
-    console.log(userscoreintial);
 }
 
 document.getElementById("gif3").onclick=function (){
@@ -43,3 +57,5 @@ document.getElementById("random-number").textContent = "Target Score: " + random
 
 document.getElementById("winnumber").textContent = "Wins: " + winsintial;
 document.getElementById("lossnumber").textContent = "Losses: " + lossesintial; 
+
+});
