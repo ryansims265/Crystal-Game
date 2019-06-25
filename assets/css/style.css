@@ -8,3 +8,16 @@ body {
     color: orange;
     text-align: center;
 }
+
+.instructions{
+    text-align: center;
+}
+
+#instructions {
+    text-align: center;
+}
+
+.container{
+    font-weight: 20px;
+    font-size: 22px;
+}
