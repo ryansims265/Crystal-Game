@@ -42,6 +42,7 @@ function reset() {
     console.log("J2 is " + j2);
     console.log("J3 is " + j3);
     console.log("J4 is " + j4);
+    console.log("Target Score is " + randomnum);
 
 }
 
@@ -50,6 +51,7 @@ function win (){
     alert("You Won!");
     $("#winnumber").text("wins: " + winsintial);
     reset();
+    console.log("You Won")
 }
 
 function lose (){
@@ -57,6 +59,7 @@ function lose (){
     alert("You Lost!");
     $("#lossnumber").text("Losses: " + lossesintial);
     reset();
+    console.log("You Lost")
 }
 
 
